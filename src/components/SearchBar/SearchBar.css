@@ -1,0 +1,23 @@
+.Container {
+   display: grid;
+   place-content: center;
+   margin-top: 7rem;
+}
+
+/*.Container button{
+    margin-top: 2rem;
+    border-radius: 18px;
+    padding: 12px;
+    background-color: blueviolet;
+    border-color: blueviolet;
+    color: white;
+    font-size: 16px;
+}*/
+
+button:hover{
+    background-color: rgb(5, 5, 73);
+}
+
+.Container input{
+    padding: 10px;
+}
