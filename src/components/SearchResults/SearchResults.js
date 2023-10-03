@@ -4,11 +4,13 @@ import Tracklist from '../tracklist/Tracklist';
 //import Track from '../Track/Track';
 
 
-function SearchResults({list}){
+function SearchResults({list, actionList}){
     return (
         <div className='Results'>
             <h4>Results</h4>
-            <Tracklist list={list}/>
+            <Tracklist list={list}
+            actionList={actionList}
+            isCustomList={false}/>
         </div>
     )
 }

@@ -2,12 +2,16 @@ import React from 'react';
 import './Tracklist.css'
 import Track from '../Track/Track';
 
-function Tracklist({list}){
+function Tracklist({list, actionList, isCustomList}){
    return (
       <ul className='Tracklist'>
-        {list.map(song => 
-            <Track name={song.nameSong} />
-        )}
+        {list.map(track => (
+            <Track
+               key={track.nameSong}
+               song={track} 
+               actionList={actionList}
+               isCustomList={isCustomList}/>
+        ))}
       </ul>
    )
 }
